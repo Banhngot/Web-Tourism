@@ -123,6 +123,32 @@
                         padding: 1px 10px;
                     }
                 }
+
+                .pirce{
+                    font-size: 2rem;
+                    color: var(--blackColor);
+                }
+            }
+
+            .desc{
+                font-size: 13.5px;
+                color: var(--textColor);
+                font-weight: 500;
+
+            }
+
+            .btn{
+                margin-top: 1rem;
+                padding: 2px 8px;
+                color: var(--whiteColor);
+                font-weight: 600;
+                justify-content: space-between;
+                gap: .3rem;
+            }
+
+            .icon{
+                align-items: center;
+                font-size: 18px;
             }
         }
     }   

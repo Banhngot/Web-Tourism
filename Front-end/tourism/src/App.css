@@ -65,6 +65,7 @@ li{
 }
 
 .btn a{
+  padding: 1px 15px;
   color: var(--whiteColor);
   font-weight: 600;
   

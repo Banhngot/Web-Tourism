@@ -92,6 +92,7 @@ input{
 body{
   background: var(--bodyColor);
 }
+<<<<<<< HEAD
 
 /* media queries */
 @media screen and (min-width: 1240px){
@@ -110,3 +111,5 @@ body{
     zoom: 1.7;
   }
 }
+=======
+>>>>>>> facdaea51a64b06c6078260cda028c6946c228b7

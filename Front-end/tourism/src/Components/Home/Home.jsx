@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./home.scss";
 import video from "../../Assets/video1.mp4";
 import { GrLocation } from "react-icons/gr";
@@ -15,6 +16,14 @@ const Home = () => {
   // hook to add a scroll animation...
   useEffect(() => {
     Aos.init({ duration: 2000 });
+  }, []);
+  // Search
+  const [data, setdata] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://reqres.in/api/users?page=2")
+      .then((res) => setdata(res.data))
+      .catch((err) => console.log(err));
   }, []);
 
   return (

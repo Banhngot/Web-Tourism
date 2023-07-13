@@ -34,7 +34,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="/Flight" className="navLink">
+              <a href="#" className="navLink">
                 Flight
               </a>
             </li>
@@ -44,17 +44,17 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="/Tour" className="navLink">
+              <a href="#" className="navLink">
                 Tour&Activities
               </a>
             </li>
             <li className="navItem">
-              <a href="/Contact" className="navLink">
+              <a href="#" className="navLink">
                 Contact
               </a>
             </li>
             <button className="btn">
-              <a href="/Book">Booking</a>
+              <a href="#">Booking</a>
             </button>
 
             <div onClick={removeNavbar} className="closeNavbar">

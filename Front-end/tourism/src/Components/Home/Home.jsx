@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./home.scss";
+
 import video from "../../Assets/video1.mp4";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";
@@ -18,13 +19,26 @@ const Home = () => {
     Aos.init({ duration: 2000 });
   }, []);
   // Search
-  const [data, setdata] = useState([]);
-  useEffect(() => {
-    axios
-      .get("https://reqres.in/api/users?page=2")
-      .then((res) => setdata(res.data))
-      .catch((err) => console.log(err));
-  }, []);
+  // const [data, setData] = useState({});
+  // const [location, setLocation] = useState("");
+  // useEffect(() => {
+  //   axios
+  //     .get()
+  //     .then((res) => setData(res.data))
+  //     .catch((err) => console.log(err));
+  // });
+
+  // const url = `https://hotels-com-provider.p.rapidapi.com/v2/hotels/search`;
+
+  // const searchLocation = (event) => {
+  //   if (event.key === "Click") {
+  //     axios.get(url).then((Response) => {
+  //       setData(Response.data);
+  //       console.log(Response);
+  //     });
+  //     searchLocation("");
+  //   }
+  // };
 
   return (
     <section className="home">
@@ -90,7 +104,14 @@ const Home = () => {
 
           <div className="searchOptions flex">
             <HiFilter className="icon" />
-            <button className="btn">SEARCH</button>
+            <button
+              className="btn"
+              // value={location}
+              // onChange={(event) => setLocation(event.target.value)}
+              // onKeyPress={searchLocation}
+            >
+              SEARCH
+            </button>
           </div>
         </div>
 

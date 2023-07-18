@@ -10,7 +10,7 @@ function Tour() {
     <>
       <Navbar />
       <SearchBar setResults={setResults} />
-      {/* <List /> */}
+      <List results={results} />
       <Main />
     </>
   );

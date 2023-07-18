@@ -10,7 +10,7 @@ const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
 
   const fetchData = (value) => {
-    fetch("https://aerodatabox.p.rapidapi.com/flights/number/DL47/2022-10-20")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((json) => {
         const results = json.filter((user) => {

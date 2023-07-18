@@ -13,12 +13,12 @@ export const App = () => {
 
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <Routes>
       <Route path="/" element = {<HomePage/>} ></Route>
       <Route path='/Hotel' element ={<Hotel/>}></Route>
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   )
 }

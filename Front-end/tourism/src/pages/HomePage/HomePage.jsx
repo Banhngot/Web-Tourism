@@ -10,7 +10,7 @@ function HomePage() {
       <Navbar />
       <Home />
       <Main />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

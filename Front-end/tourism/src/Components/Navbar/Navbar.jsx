@@ -49,10 +49,16 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navItem">
+              <a href="Weather" className="navLink">
+                Weather
+              </a>
+            </li>
+            <li className="navItem">
               <a href="#" className="navLink">
                 Contact
               </a>
             </li>
+
             <button className="btn">
               <a href="#">Booking</a>
             </button>
